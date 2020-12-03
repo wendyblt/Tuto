@@ -2,6 +2,12 @@
     "composer/package-versions-deprecated": {
         "version": "1.11.99.1"
     },
+    "composer/semver": {
+        "version": "3.2.4"
+    },
+    "composer/xdebug-handler": {
+        "version": "1.4.5"
+    },
     "doctrine/annotations": {
         "version": "1.0",
         "recipe": {
@@ -96,6 +102,18 @@
     "egulias/email-validator": {
         "version": "2.1.24"
     },
+    "friendsofphp/php-cs-fixer": {
+        "version": "2.2",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "2.2",
+            "ref": "cc05ab6abf6894bddb9bbd6a252459010ebe040b"
+        },
+        "files": [
+            ".php_cs.dist"
+        ]
+    },
     "laminas/laminas-code": {
         "version": "3.5.1"
     },
@@ -113,6 +131,9 @@
     },
     "ocramius/proxy-manager": {
         "version": "2.10.0"
+    },
+    "php-cs-fixer/diff": {
+        "version": "v1.3.1"
     },
     "phpdocumentor/reflection-common": {
         "version": "2.2.0"
@@ -366,6 +387,9 @@
         "version": "v1.20.0"
     },
     "symfony/polyfill-mbstring": {
+        "version": "v1.20.0"
+    },
+    "symfony/polyfill-php70": {
         "version": "v1.20.0"
     },
     "symfony/polyfill-php73": {
