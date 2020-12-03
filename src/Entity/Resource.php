@@ -1,6 +1,5 @@
 <?php
 
-
 namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
@@ -25,9 +24,6 @@ class Resource
      */
     private $category;
 
-    /**
-     * @return int
-     */
     public function getId(): int
     {
         return $this->id;
@@ -43,13 +39,13 @@ class Resource
 
     /**
      * @param mixed $category
-     * @return Resource
+     *
+     * @return resource
      */
     public function setCategory($category)
     {
         $this->category = $category;
+
         return $this;
     }
-
-
 }

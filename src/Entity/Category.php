@@ -1,6 +1,5 @@
 <?php
 
-
 namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
@@ -31,29 +30,20 @@ class Category
      */
     private $resources;
 
-    /**
-     * @return int
-     */
     public function getId(): int
     {
         return $this->id;
     }
 
-    /**
-     * @return string
-     */
     public function getLabel(): string
     {
         return $this->label;
     }
 
-    /**
-     * @param string $label
-     * @return Category
-     */
     public function setLabel(string $label): Category
     {
         $this->label = $label;
+
         return $this;
     }
 
@@ -67,12 +57,13 @@ class Category
 
     /**
      * @param mixed $resources
+     *
      * @return Category
      */
     public function setResources($resources)
     {
         $this->resources = $resources;
+
         return $this;
     }
-
 }
